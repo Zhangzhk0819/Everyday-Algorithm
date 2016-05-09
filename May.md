@@ -14,7 +14,8 @@
 3. 3 2 6 7 8 9  
 4. 2 3 6 7 8 9
 
-Reference:[百度百科](http://baike.baidu.com/link?url=QzOZlOqZFiPO82cpEOFH143ewPZdH7N1fS5ucXhjuYPL5Bxtan2ooV0gkPl9Dic2Lc3ggD6gjGA0sw1CsckQ2-TD9woGOxLozRGGGb3zLiJuN84xciMtAttZG-74C18_aXYiX_O0DT15XE_xzbdoOfK7VqvtMSObSiXX2O6oJIe2Z4Lv0JbiLbI5wejRGp_a)
+Reference:  
+[百度百科](http://baike.baidu.com/link?url=QzOZlOqZFiPO82cpEOFH143ewPZdH7N1fS5ucXhjuYPL5Bxtan2ooV0gkPl9Dic2Lc3ggD6gjGA0sw1CsckQ2-TD9woGOxLozRGGGb3zLiJuN84xciMtAttZG-74C18_aXYiX_O0DT15XE_xzbdoOfK7VqvtMSObSiXX2O6oJIe2Z4Lv0JbiLbI5wejRGp_a)
 
 ## 5.6 如何判断单向链表是否存在环，并找出环的入口点
 ### 核心思想
@@ -22,7 +23,8 @@ Reference:[百度百科](http://baike.baidu.com/link?url=QzOZlOqZFiPO82cpEOFH143
 2. 判断是否存在环：让两个指针从头开始走，如果两个指针在某个时刻相遇了，那么说明链表存在环，否则快指针将会指向NULL。有一个问题是两个指针是否一定相遇，答案是肯定的，假设从链表头到环入口的距离是a，如果两指针会相遇，假设相遇点里环入口距离是b，那么慢指针走了a+b步，快指针走了a+b+nL步，其中L是环的长度，且a+b+nL=2(a+b)，所以nL=a+b，由于a和L为定值，我们总能找到一个b使得这个等式成立。
 3. 如果存在环，寻找环的入口点的思路：两个指针相遇后，把其中一个指针移到链表头部，两个指针每次都只移动一步，那么两个指针第一次相遇那个点就是环的入口点。按照上面分析，两个指针相遇时nL=a+b。那么经过a+b步后，两个指针将再次相遇在b点相遇。由于两个指针都只移动一步，那么在b点的前一个点两点也是相遇的，向前反推，两点一点会在a点首次相遇。
 
-Reference:[Jark's Blog](http://wuchong.me/blog/2014/03/25/interview-link-questions/)
+Reference:  
+[Jark's Blog](http://wuchong.me/blog/2014/03/25/interview-link-questions/)
 
 
 ## 5.7 堆排序
@@ -45,7 +47,8 @@ Reference:
 ### 解题思路
 从右上角那个数m开始遍历，如果这个数大于a，那么可以把m所在的列全部去掉，如果m小于a，那么可以把m所在的行去掉。依次类推，最坏的情况下时间复杂度为O(n)。
 
-Reference:剑指offer面试题3
+Reference:  
+剑指offer面试题3
 
 
 
