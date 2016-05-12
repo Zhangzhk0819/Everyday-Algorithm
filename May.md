@@ -56,6 +56,7 @@ Reference:
 
 ### 二叉树遍历定义
 ![二叉树遍历](https://github.com/Zhangzhk0819/Everyday-Algorithm/blob/master/Figure/1.png)
+[二叉树](http://blog.csdn.net/fansongy/article/details/6798278)
 
 ### 解题思路
 主要掌握前序遍历和中序遍历的特点：  
